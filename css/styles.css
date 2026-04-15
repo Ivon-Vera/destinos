@@ -171,6 +171,34 @@ main {
   background-color: rgb(41,128,185);
 }
 
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0 5rem;
+}
+
+.footer-seccion {
+  min-width: 180px;
+}
+
+.footer-seccion h4 {
+  margin-bottom: 0.8rem;
+}
+
+.footer-seccion a {
+  display: block;
+  color: rgb(41,128,185);
+  text-decoration: none;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.footer-seccion a:hover {
+  color: rgb(8, 42, 152);
+}
+
 @media (max-width: 480px) {
   .destinos {
     grid-template-columns: 1fr;
