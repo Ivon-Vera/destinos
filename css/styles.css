@@ -10,10 +10,24 @@ body{
 }
 header {
   text-align: center;
-  padding: 1.5rem;
+  padding: 0rem;
   background-color: white;
   border-bottom: 0.0625rem solid rgb(221,221,221);
   margin-bottom: 1rem;
+}
+.hero {
+  background-image: url('../img/avion5.jpg'); /* ajustá ruta */
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
 
 .mi-navbar {
