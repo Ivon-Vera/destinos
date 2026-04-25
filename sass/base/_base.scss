@@ -1,0 +1,6 @@
+@use "../utilities/variables" as v;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: v.$color-fondo;
+}

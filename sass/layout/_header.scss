@@ -1,0 +1,21 @@
+@use "../utilities/variables" as v;
+
+header {
+  text-align: center;
+  background-color: white;
+  border-bottom: 1px solid v.$color-borde;
+  margin-bottom: 1rem;
+}
+
+.hero {
+  background-image: url('../img/avion5.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+}

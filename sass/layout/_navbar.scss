@@ -1,0 +1,16 @@
+@use "../utilities/variables" as v;
+
+.mi-navbar {
+  background-color: white;
+  border-bottom: 1px solid v.$color-borde;
+
+  .navbar-nav {
+    gap: 1.5rem;
+  }
+
+  .nav-link {
+    color: v.$color-texto;
+    font-weight: 500;
+    text-align: center;
+  }
+}

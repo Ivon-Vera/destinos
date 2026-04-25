@@ -1,0 +1,51 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.destinos {
+  display: grid;
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1.25rem;
+}
+
+.destino {
+  background-color: white;
+  padding: 1.5rem;
+  border: 1px solid v.$color-borde;
+  border-radius: 0.5rem;
+  position: relative;
+  transition: 0.25s;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-6px) scale(1.03);
+  }
+
+img {
+  width: 100%;
+  height: 12rem;
+
+  object-fit: cover;
+  background-color: #eee;
+}
+
+  button {
+    @include m.boton;
+    background-color: v.$color-principal;
+    color: white;
+
+    &:hover {
+      background-color: v.$color-hover;
+    }
+  }
+}
+
+.badge {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.popular { background-color: v.$color-popular; }
+.economico { background-color: v.$color-economico; }
+.premium { background-color: v.$color-premium; }

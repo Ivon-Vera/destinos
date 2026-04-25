@@ -1,0 +1,28 @@
+@use "../utilities/mixins" as m;
+@use "../utilities/variables" as v;
+
+.buscador {
+  margin-top: 2rem;
+  padding: 0 2.5rem;
+}
+
+.form-busqueda {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: flex-end;
+
+  input, select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    flex: 1;
+    min-width: 150px;
+  }
+
+  button {
+    @include m.boton;
+    background-color: v.$color-principal;
+    color: white;
+  }
+}
