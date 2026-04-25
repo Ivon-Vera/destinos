@@ -7,9 +7,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contacto | Destinocity</title>
+    <title>Actividades | Destinocity</title>
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
@@ -31,7 +31,7 @@
     <div class="collapse navbar-collapse justify-content-center" id="menu">
       <ul class="navbar-nav">
 
-        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
         <li class="nav-item"><a class="nav-link" href="hoteles.html">Hoteles</a></li>
         <li class="nav-item"><a class="nav-link" href="vuelos.html">Vuelos</a></li>
         <li class="nav-item"><a class="nav-link" href="micros.html">Micros</a></li>
@@ -50,18 +50,18 @@
   <div class="carousel-inner">
 
     <div class="carousel-item active">
-      <img src="img/carusel15.webp" class="d-block w-100" alt="París">
+      <img src="../img/carusel15.webp" class="d-block w-100" alt="París">
     </div>
 
     <div class="carousel-item">
-      <img src="img/carusel13.avif" class="d-block w-100" alt="Roma">
+      <img src="../img/carusel13.avif" class="d-block w-100" alt="Roma">
     </div>
 
     <div class="carousel-item">
-      <img src="img/carusel7.png" class="d-block w-100" alt="Nueva York">
+      <img src="../img/carusel7.png" class="d-block w-100" alt="Nueva York">
     </div>
     <div class="carousel-item">
-      <img src="img/carusel12.jpg" class="d-block w-100" alt="Nueva York">
+      <img src="../img/carusel12.jpg" class="d-block w-100" alt="Nueva York">
     </div>
 
   </div>
@@ -78,23 +78,69 @@
 </div>
 </div>
 
+<section class="buscador">
+  <h1>Actividades para tu viaje</h1>
+<form class="form-busqueda">
+
+  <!-- Destino -->
+  <input type="text" placeholder="Destino">
+
+  <!-- Fecha ida -->
+  <input type="date" >
+
+  <!-- Personas -->
+  <input type="number" placeholder="Personas" min="1">
+
+  <!-- Botón -->
+  <button type="submit">Buscar</button>
+
+</form>
+</section>
 <main>
-  <section class="buscador">
+ <section class="destinos">
 
-    <h1>Contacto</h1>
+    <article class="destino">
+      <h2>Tour en París</h2>
+      <p>Recorrido por la Torre Eiffel y el Sena</p>
+      <img src="../img/Paris.webp" alt="Tour en París">
+      <p class="precio">USD 80</p>
+      <button>Reservar</button>
+    </article>
 
-    <form class="form-contacto">
+    <article class="destino">
+      <h2>Excursión en Roma</h2>
+      <p>Visita guiada al Coliseo</p>
+      <img src="../img/Roma.jpg" alt="Tour en Roma">
+      <p class="precio">USD 70</p>
+      <button>Reservar</button>
+    </article>
 
-      <input type="text" placeholder="Nombre" required>
-      <input type="email" placeholder="Email" required>
-      <input type="text" placeholder="Asunto">
-      <textarea placeholder="Mensaje" rows="4"></textarea>
 
-      <button type="submit">Enviar</button>
+  <article class="destino">
+  <h2>Safari fotográfico</h2>
+  <p>Experiencia única en la naturaleza</p>
+  <img src="../img/Brasil.jpg" alt="Safari">
+  <p class="precio">USD 150</p>
+  <button>Reservar</button>
+</article>
 
-    </form>
+<article class="destino">
+  <h2>Tour gastronómico</h2>
+  <p>Degustación de comidas locales</p>
+  <img src="../img/Mexico.jpg" alt="Comida típica">
+  <p class="precio">USD 60</p>
+  <button>Reservar</button>
+</article>
 
-  </section>
+<article class="destino">
+  <h2>Paseo en barco</h2>
+  <p>Recorrido guiado por la costa</p>
+  <img src="../img/Barcelona.jpg" alt="Barco">
+  <p class="precio">USD 45</p>
+  <button>Reservar</button>
+</article>
+
+ </section>
 </main>
 <footer class="footer">
 

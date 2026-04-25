@@ -7,9 +7,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Actividades | Destinocity</title>
+    <title>Hoteles | Destinocity</title>
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
@@ -31,7 +31,7 @@
     <div class="collapse navbar-collapse justify-content-center" id="menu">
       <ul class="navbar-nav">
 
-        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
         <li class="nav-item"><a class="nav-link" href="hoteles.html">Hoteles</a></li>
         <li class="nav-item"><a class="nav-link" href="vuelos.html">Vuelos</a></li>
         <li class="nav-item"><a class="nav-link" href="micros.html">Micros</a></li>
@@ -50,18 +50,18 @@
   <div class="carousel-inner">
 
     <div class="carousel-item active">
-      <img src="img/carusel15.webp" class="d-block w-100" alt="París">
+      <img src="../img/carusel15.webp" class="d-block w-100" alt="París">
     </div>
 
     <div class="carousel-item">
-      <img src="img/carusel13.avif" class="d-block w-100" alt="Roma">
+      <img src="../img/carusel13.avif" class="d-block w-100" alt="Roma">
     </div>
 
     <div class="carousel-item">
-      <img src="img/carusel7.png" class="d-block w-100" alt="Nueva York">
+      <img src="../img/carusel7.png" class="d-block w-100" alt="Nueva York">
     </div>
     <div class="carousel-item">
-      <img src="img/carusel12.jpg" class="d-block w-100" alt="Nueva York">
+      <img src="../img/carusel12.jpg" class="d-block w-100" alt="Nueva York">
     </div>
 
   </div>
@@ -79,68 +79,98 @@
 </div>
 
 <section class="buscador">
-  <h1>Actividades para tu viaje</h1>
+<h1>Hoteles disponibles</h1>
 <form class="form-busqueda">
 
-  <!-- Destino -->
-  <input type="text" placeholder="Destino">
+  <!-- Tipo de viaje -->
+  <select>
+    <option value="">Destino</option>
+    <option>Roma</option>
+    <option>Paris</option>
+    <option>Mexico</option>
+    <option>Tokio</option>
+    <option>Barcelona</option>
+    <option>Brasil</option>
+    <option>Nueva York</option>
+    <option>Mostrar más</option>
+  </select>
 
   <!-- Fecha ida -->
+   <p>Desde:</p>
+  <input type="date" >
+
+  <!-- Fecha vuelta -->
+   <p>Hasta:</p>
   <input type="date" >
 
   <!-- Personas -->
-  <input type="number" placeholder="Personas" min="1">
-
+  <input type="number" placeholder="Adultos" min="1">
+  <input type="number" placeholder="Menores" min="0">
   <!-- Botón -->
   <button type="submit">Buscar</button>
 
 </form>
 </section>
 <main>
- <section class="destinos">
+<section class="destinos">
 
     <article class="destino">
-      <h2>Tour en París</h2>
-      <p>Recorrido por la Torre Eiffel y el Sena</p>
-      <img src="img/Paris.webp" alt="Tour en París">
-      <p class="precio">USD 80</p>
+      <h2>Hotel en París</h2>
+      <p>Elegancia clásica y vistas exclusivas a la Torre Eiffel</p>
+      <img src="../img/hotelenparis.jpg" alt="Hotel en París">
+      <p class="precio">USD 300 por noche</p>
       <button>Reservar</button>
     </article>
 
     <article class="destino">
-      <h2>Excursión en Roma</h2>
-      <p>Visita guiada al Coliseo</p>
-      <img src="img/Roma.jpg" alt="Tour en Roma">
-      <p class="precio">USD 70</p>
+      <h2>Hotel en Barcelona</h2>
+      <p>Relajación y estilo frente al mar en la zona de la Barceloneta</p>
+      <img src="../img/hotelenbarcelona.webp" alt="Hotel en Barcelona">
+      <p class="precio">USD 250 por noche</p>
       <button>Reservar</button>
     </article>
 
+    <article class="destino">
+      <h2>Hotel en Tokio</h2>
+      <p>Tecnología y estilo futurista en el corazón de la metrópoli</p>
+      <img src="../img/hotelentokio.jpg" alt="Hotel en Tokio">
+      <p class="precio">USD 250 por noche</p>
+      <button>Reservar</button>
+    </article>
 
-  <article class="destino">
-  <h2>Safari fotográfico</h2>
-  <p>Experiencia única en la naturaleza</p>
-  <img src="img/Brasil.jpg" alt="Safari">
-  <p class="precio">USD 150</p>
-  <button>Reservar</button>
-</article>
+    <article class="destino">
+      <h2>Hotel en Roma</h2>
+      <p>Confort moderno a pasos de las plazas y fuentes más icónicas</p>
+      <img src="../img/hotelroma.jpg" alt="Hotel en Roma">
+      <p class="precio">USD 250 por noche</p>
+      <button>Reservar</button>
+    </article>
 
-<article class="destino">
-  <h2>Tour gastronómico</h2>
-  <p>Degustación de comidas locales</p>
-  <img src="img/Mexico.jpg" alt="Comida típica">
-  <p class="precio">USD 60</p>
-  <button>Reservar</button>
-</article>
+      <article class="destino">
+      <h2>Hotel en Brasil</h2>
+      <p>Paraíso tropical con sol, mar y el mejor ritmo brasileño.</p>
+      <img src="../img/hotelenbrasil.avif" alt="Hotel en Brasil">
+      <p class="precio">USD 250 por noche</p>
+      <button>Reservar</button>
+    </article>
 
-<article class="destino">
-  <h2>Paseo en barco</h2>
-  <p>Recorrido guiado por la costa</p>
-  <img src="img/Barcelona.jpg" alt="Barco">
-  <p class="precio">USD 45</p>
-  <button>Reservar</button>
-</article>
+     <article class="destino">
+      <h2>Hotel en Nueva York</h2>
+      <p>Conectividad total y diseño moderno a pasos de Times Square</p>
+      <img src="../img/hotelennuevayork.jpg" alt="Hotel en Nueva York">
+      <p class="precio">USD 250 por noche</p>
+      <button>Reservar</button>
+    </article>
 
- </section>
+    <article class="destino">
+      <h2>Hotel en Mexico</h2>
+      <p>Encanto histórico y diseño moderno en el corazón de la ciudad</p>
+      <img src="../img/hotelenmexico.jpg" alt="Hotel en Mexico">
+      <p class="precio">USD 250 por noche</p>
+      <button>Reservar</button>
+    </article>
+
+</section>
 </main>
 <footer class="footer">
 
