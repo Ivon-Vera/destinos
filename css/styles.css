@@ -19,6 +19,11 @@ body {
   min-height: 100vh;
 }
 
+main {
+  flex: 1;
+  padding-bottom: 5rem;
+}
+
 header {
   text-align: center;
   background-color: white;
@@ -187,9 +192,6 @@ header {
   border: 1px solid #ccc;
   border-radius: 0.3rem;
   margin-top: 0.5rem;
-}
-.form-contacto main {
-  margin-bottom: 5rem;
 }
 .form-contacto button {
   width: fit-content;
