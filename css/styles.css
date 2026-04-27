@@ -140,6 +140,10 @@ header {
   object-fit: cover;
   background-color: #eee;
 }
+.destino .precio {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
 .destino button {
   border: none;
   border-radius: 999px;
@@ -184,8 +188,21 @@ header {
   border-radius: 0.3rem;
   margin-top: 0.5rem;
 }
+.form-contacto main {
+  margin-bottom: 5rem;
+}
 .form-contacto button {
   width: fit-content;
+}
+.form-contacto .btn-enviar {
+  border: none;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: rgb(52, 152, 219);
+  color: white;
 }
 
 .whatsapp-btn {

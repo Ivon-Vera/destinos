@@ -29,6 +29,11 @@ img {
   background-color: #eee;
 }
 
+.precio {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
   button {
     @include m.boton;
     background-color: v.$color-principal;

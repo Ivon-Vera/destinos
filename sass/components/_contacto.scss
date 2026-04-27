@@ -1,9 +1,11 @@
+@use "../utilities/mixins" as m;
+
 .form-contacto {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   max-width: 500px;
-  margin: 0rem ;
+  margin: 0rem;
 
   input,
   textarea {
@@ -18,6 +20,15 @@
     width: fit-content;
     
   }
+  .btn-enviar {
+  @include m.boton;
+
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: rgb(52,152,219);
+  color: white;
+}
+
 }
 
 .whatsapp-btn {
