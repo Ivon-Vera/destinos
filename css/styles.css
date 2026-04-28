@@ -32,10 +32,10 @@ header {
 }
 
 .hero {
-  background-image: url("../img/avion5.jpg");
+  background-image: url("../img/banernuevo.png");
   background-size: cover;
   background-position: center;
-  height: 30vh;
+  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
