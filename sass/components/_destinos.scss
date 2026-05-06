@@ -1,5 +1,7 @@
+@use "../utilities/extends";
 @use "../utilities/variables" as v;
 @use "../utilities/mixins" as m;
+
 
 .destinos {
   display: grid;
@@ -9,17 +11,18 @@ grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .destino {
-  background-color: white;
+  @extend %card-base;
+
+  display: flex;
+  flex-direction: column;
   padding: 1.5rem;
   border: 1px solid v.$color-borde;
-  border-radius: 0.5rem;
   position: relative;
-  transition: 0.25s;
-  cursor: pointer;
 
   &:hover {
     transform: translateY(-6px) scale(1.03);
   }
+}
 
 img {
   width: 100%;
@@ -43,7 +46,7 @@ img {
       background-color: v.$color-hover;
     }
   }
-}
+
 
 .badge {
   position: absolute;

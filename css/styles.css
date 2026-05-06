@@ -21,7 +21,7 @@ body {
 
 main {
   flex: 1;
-  padding-bottom: 5rem;
+  padding-bottom: 30rem;
 }
 
 header {
@@ -32,15 +32,41 @@ header {
 }
 
 .hero {
-  background-image: url("../img/banernuevo.png");
+  background-image: url("../img/background.png");
   background-size: cover;
   background-position: center;
-  height: 40vh;
+  height: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
+  font-size:35px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
 }
+.hero .titulo{
+  opacity: 0;
+  transform: translateY(80px) rotate(-10deg);
+  animation: subir 1.5s ease-out forwards;
+
+}
+
+@keyframes subir {
+  0% {
+    opacity: 0;
+    transform: translateY(80px) rotate(-10deg);
+  }
+  60% {
+    transform: translateY(-10px) rotate(5deg); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+
 
 .logo {
   font-size: 2.5rem;
@@ -84,9 +110,9 @@ header {
 }
 
 .carousel img {
+  width: 100%;
   height: 300px;
   object-fit: cover;
-  object-position: center;
 }
 
 .carousel-wrapper {
@@ -222,6 +248,7 @@ header {
   border-radius: 2.5rem;
 }
 
+
 @media (max-width: 48rem) {
   .destinos {
     grid-template-columns: 1fr;
@@ -242,6 +269,14 @@ header {
   .destino img {
     height: 11.25rem;
   }
+  .carousel img {
+    height: 180px;       
+    object-fit: cover;   
+  }
+
+  .carousel-wrapper {
+    margin: 0;           
+  }
 }
 
-/*# sourceMappingURL=styles.css.map */
+

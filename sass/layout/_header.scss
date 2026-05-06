@@ -8,7 +8,7 @@ header {
 }
 
 .hero {
-  background-image: url('../');
+  background-image: url('/img/background.png');
   background-size: cover;
   background-position: center;
   height: 35vh;
@@ -20,7 +20,7 @@ header {
   color: white;
 }
 .logo {
-  font-size: 2.5rem; // podés ajustar
+  font-size: 2.5rem; 
   font-weight: bold;
   margin: 0;
 }

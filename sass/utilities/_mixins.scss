@@ -4,3 +4,9 @@
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
+
+@mixin tablet {
+  @media (max-width: 48rem) {
+    @content;
+  }
+}
